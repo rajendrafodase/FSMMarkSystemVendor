@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--    <color name="colorPrimary">#498feb</color>-->
+    <!--    <color name="colorPrimaryDark">#498feb</color>-->
+    <!--    <color name="colorAccent">#498feb</color>-->
+    <color name="transparent">#0CFFFFFF</color>
+    <color name="transperant">#0000ffff</color>
+    <color name="colorPrimary">#E9918F</color>
+    <color name="colorPrimaryDark">#E9918F</color>
+    <color name="colorAccent">#E9918F</color>
+    <color name="apptheme">#E9918F</color>
+    <color name="buttontheme">#E9918F</color>
+    <color name="backgroundcolor">#FAFAFA</color>
+    <!--    <color name="newcolor">#2175e4</color>-->
+    <color name="newcolor">#2B345F</color>
+    <color name="newcolor1">#2B345F</color>
+    <color name="lightblue">#E2EDFA</color>
+    <color name="faintgray">#f5F5f5</color>
+    <color name="gray_textcolor">#707070</color>
+    <color name="newaccolor">#d51c4e</color>
+    <color name="black">#FF000000</color>
+    <color name="light_gray">#CCCACA</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#3232FF</color>
+    <color name="gray">#767587</color>
+    <color name="colorText">#504F60</color>
+    <color name="title">#383743</color>
+    <color name="lightblack">#444444</color>
+    <!--    <color name="textcolor">#2d3462</color>-->
+    <color name="textcolor">#1B1B1C</color>
+    <color name="red">#FF1E1E</color>
+    <color name="light_black">#141518</color>
+    <color name="grey">#BFC4C5</color>
+    <color name="green">#228B22</color>
+
+
+    <color name="shimmer">#A6A6A6</color>
+    <color name="shimmer_light">#DADADC</color>
+    <color name="grey_3">#94908F</color>
+
+</resources>

@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    tools:context=".UI.AddNewVendor">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/ten"
+            android:layout_marginTop="@dimen/ten"
+            android:orientation="vertical"
+            android:padding="@dimen/five">
+
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/profile"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@color/apptheme"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image_edit"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/edit"
+                    app:civ_border_width="2dp"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    app:civ_border_color="@color/white"/>
+
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/fourteen"
+                android:layout_marginBottom="@dimen/ten"
+                android:layout_weight="1"
+                android:elevation="2dp"
+                app:cardBackgroundColor="@color/buttontheme"
+                app:cardCornerRadius="10dp"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="@dimen/five">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="PICK LOCATION"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/fourteen" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/five"
+                android:text="Enter Shop Name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteen" />
+
+            <EditText
+                android:id="@+id/edt_shopName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/edittextbackground"
+                android:hint="Shop Name"
+                android:imeOptions="actionNext"
+                android:inputType="textCapWords"
+                android:padding="@dimen/fourteen"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteen" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginBottom="@dimen/five"
+                android:text="Enter Vendor Name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteen" />
+
+            <EditText
+                android:id="@+id/edt_vendorName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/edittextbackground"
+                android:hint="Vendor Name"
+                android:imeOptions="actionNext"
+                android:inputType="textCapWords"
+                android:padding="@dimen/fourteen"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteen" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginBottom="@dimen/five"
+                android:text="Please Select Vendor Type:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteen" />
+
+            <EditText
+                android:id="@+id/edt_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/edittextbackground"
+                android:inputType="textCapWords"
+                android:padding="@dimen/fourteen"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteen" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginBottom="@dimen/five"
+                android:text="Vendor Category"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteen" />
+
+            <EditText
+                android:id="@+id/edt_ven_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/edittextbackground"
+                android:hint="Vendor Category"
+                android:imeOptions="actionNext"
+                android:inputType="textCapWords"
+                android:padding="@dimen/fourteen"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteen" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginBottom="@dimen/five"
+                android:text="Enter Phone Number"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteen" />
+
+            <EditText
+                android:id="@+id/edt_phonenumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/edittextbackground"
+                android:hint="Phone Number"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="10"
+                android:padding="@dimen/fourteen"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteen" />
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginBottom="@dimen/five"
+                android:text="PAN Number"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteen" />
+
+            <EditText
+                android:id="@+id/edt_pan_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/edittextbackground"
+                android:hint="PAN Number"
+                android:imeOptions="actionNext"
+                android:inputType="textCapWords"
+                android:padding="@dimen/fourteen"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteen" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginBottom="@dimen/five"
+                android:text="Enter GST Number"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteen" />
+
+            <EditText
+                android:id="@+id/edt_GST"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/edittextbackground"
+                android:hint="GST Number"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:padding="@dimen/fourteen"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteen" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginBottom="@dimen/five"
+                android:text="Business GST Registered:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteen" />
+
+            <EditText
+                android:id="@+id/edt_registered"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/edittextbackground"
+                android:inputType="textCapWords"
+                android:padding="@dimen/fourteen"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteen" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginBottom="@dimen/five"
+                android:text="GST Registered Type"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteen" />
+
+            <EditText
+                android:id="@+id/edt_GST_regiter_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/edittextbackground"
+                android:hint="GST Registered Type"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:padding="@dimen/fourteen"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteen" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginBottom="@dimen/five"
+                android:text="Enter FSSAI Number"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteen" />
+
+            <EditText
+                android:id="@+id/edt_fssai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/edittextbackground"
+                android:hint="FSSAI Number"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:padding="@dimen/fourteen"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteen" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginBottom="@dimen/five"
+                android:text="Please Select Zone:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteen" />
+
+            <EditText
+                android:id="@+id/edt_zone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/edittextbackground"
+                android:inputType="textCapWords"
+                android:padding="@dimen/fourteen"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteen" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginBottom="@dimen/five"
+                android:text="Please Select Region:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteen" />
+
+            <EditText
+                android:id="@+id/edt_region"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/edittextbackground"
+                android:inputType="textCapWords"
+                android:padding="@dimen/fourteen"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteen" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginBottom="@dimen/five"
+                android:text="Please Select Area:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteen" />
+
+            <EditText
+                android:id="@+id/edt_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/edittextbackground"
+                android:inputType="textCapWords"
+                android:padding="@dimen/fourteen"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteen" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginBottom="@dimen/five"
+                android:text="Enter Address Line1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteen" />
+
+            <EditText
+                android:id="@+id/edt_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/edittextbackground"
+                android:hint="Enter Address Line1"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:padding="@dimen/fourteen"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteen" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginBottom="@dimen/five"
+                android:text="Enter Address Line2"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteen" />
+
+            <EditText
+                android:id="@+id/edt_address2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/edittextbackground"
+                android:hint="Enter Address Line2"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:padding="@dimen/fourteen"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteen" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginBottom="@dimen/five"
+                android:text="Enter City"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteen" />
+
+            <EditText
+                android:id="@+id/edt_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/edittextbackground"
+                android:hint="Enter City"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:padding="@dimen/fourteen"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteen" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginBottom="@dimen/five"
+                android:text="Discount on Order"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteen" />
+
+            <EditText
+                android:id="@+id/edt_order_Discount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/edittextbackground"
+                android:hint="Discount on Order"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:padding="@dimen/fourteen"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteen" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/fourteen"
+                android:layout_weight="1"
+                android:elevation="2dp"
+                app:cardBackgroundColor="@color/buttontheme"
+                app:cardCornerRadius="30dp"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="@dimen/five">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Submit"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/fourteen" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

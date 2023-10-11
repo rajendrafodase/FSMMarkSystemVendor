@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">gocabish</string>
+
+
+    //PolylinePaid Api
+    <!--    <string name="api_key">AIzaSyBDGwMlGfHOouTalWn1P6JvBlArzutaepk</string>-->
+    <!--    <string name="api_key">AIzaSyCNUHEzM83jp0iv2bfq10hRI286MujcLPc</string>-->
+
+    //PlaceApiKey
+    <string name="api_key">AIzaSyCNUHEzM83jp0iv2bfq10hRI286MujcLPc</string>
+
+
+    <string name="SignIn">Sign In</string>
+    <string name="txt_otp_msgs">We\'ll send you a One Time Password to this number</string>
+    <string name="enter_mobile">Enter mobile number</string>
+    <string name="otp_verification">OTP Verification</string>
+    <string name="verify">Verify</string>
+    <string name="countrycode">+91</string>
+    <string name="txt_didnt_recived_code">Didn\'t get OTP code?</string>
+    <string name="resend_otp">Resend</string>
+    <string name="otp_code_from_sms">Enter verification code that get from SMS</string>
+    <string name="login_signupmgg">Don\'t have an account ?</string>
+    <string name="txt_apply_coupon">Apply Coupon</string>
+    <string name="txt_coupons_available">Coupons available</string>
+    <string name="top_sheet_behavior" translatable="false">com.gocabish.ui.helper.TopSheetBehavior</string>
+    <string name="txt_splash_internet_alert_messages">It looks like your internet connection is off. Please turn it on and try it again</string>
+
+
+</resources>

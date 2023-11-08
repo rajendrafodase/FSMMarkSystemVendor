@@ -12,6 +12,8 @@
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+    <!-- <string name="google_api_key2">AIzaSyCGcDKfLfVKcEiUBajc-BUm4EmE3UqRec0</string>--><!--my account-->
+    <string name="google_api_key2">AIzaSyCW1PeUDoxcFf1iruvcIWxq5McRy8GhGxk</string><!--Client account-->
 
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris

@@ -6,11 +6,11 @@
     <!--    <color name="colorAccent">#498feb</color>-->
     <color name="transparent">#0CFFFFFF</color>
     <color name="transperant">#0000ffff</color>
-    <color name="colorPrimary">#E9918F</color>
-    <color name="colorPrimaryDark">#E9918F</color>
-    <color name="colorAccent">#E9918F</color>
-    <color name="apptheme">#E9918F</color>
-    <color name="buttontheme">#E9918F</color>
+    <color name="colorPrimary">#0097A7</color>
+    <color name="colorPrimaryDark">#0097A7</color>
+    <color name="colorAccent">#0097A7</color>
+    <color name="apptheme">#0097A7</color>
+    <color name="buttontheme">#0097A7</color>
     <color name="backgroundcolor">#FAFAFA</color>
     <!--    <color name="newcolor">#2175e4</color>-->
     <color name="newcolor">#2B345F</color>

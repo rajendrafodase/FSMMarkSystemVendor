@@ -13,11 +13,10 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MyConfig
 {
-    //https://sumagosolutions.in/Appointments_Services_Booking_Application/API_User/login.php
-        public static final String JSON_BASE_URL = "https://sumagosolutions.in/all_devp/Appointments_Services_Booking_Application/";
-    public static final String JSON_Sub_URL = "";
-    public static final String Demo = "";
-
+        public static final String JSON_BASE_URL = "https://marg.routemate.in/";
+        public static final String JSON_DECRYPTION_URL = "https://thescrapwale.com/api/";
+    public static final String JSON_Sub_URL = "api/v1/eOnlineData/";
+    public static final String DemoKEY = "5Z6HWPTG3O4K";
 
     public static Retrofit retrofit=null;
         public static Retrofit getRetrofit() {
@@ -34,5 +33,21 @@ public class MyConfig
             return retrofit;
     }
 
+
+
+    public static Retrofit retrofit2=null;
+    public static Retrofit getDecryptionRetrofit() {
+        Gson gson = new GsonBuilder().setLenient().create();
+        retrofit2 = new Retrofit.Builder()
+                .baseUrl(JSON_DECRYPTION_URL)
+                .client(new OkHttpClient.Builder().
+                        connectTimeout(60, TimeUnit.SECONDS)
+                        .readTimeout(60, TimeUnit.SECONDS)
+                        .writeTimeout(60,TimeUnit.SECONDS)
+                        .build())
+                .addConverterFactory(GsonConverterFactory.create(gson))
+                .build();
+        return retrofit2;
+    }
 
 }

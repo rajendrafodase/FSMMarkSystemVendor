@@ -9,408 +9,95 @@
     android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/app_bar_main">
-<androidx.core.widget.NestedScrollView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-    <LinearLayout
+
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="10dp">
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/map" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:paddingLeft="8dp"
-                android:text="Hindu temple in Nashik, Maharashtra 422605"
-                android:textColor="@android:color/black"
-                android:textSize="14dp"
-                android:textStyle="normal" />
-
-
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/fifteen"
-            android:orientation="horizontal">
-
-
-            <EditText
-                android:id="@+id/edt_shopName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:background="@drawable/edittextbackground_search"
-                android:drawableStart="@drawable/ic_search"
-                android:hint="Search "
-                android:imeOptions="actionSearch"
-                android:inputType="textCapWords"
-                android:padding="@dimen/fourteen"
-                android:singleLine="true"
-                android:textColor="@color/black"
-                android:textSize="@dimen/fourteen" />
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/fifteen"
-            android:orientation="vertical">
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:paddingLeft="8dp"
-                android:text="For Your Business"
-                android:textColor="@android:color/black"
-                android:textSize="@dimen/Sixteen"
-                android:textStyle="bold" />
+            android:orientation="vertical"
+            android:padding="10dp">
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_marginTop="@dimen/five"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/backgroundcolor"
                 android:orientation="horizontal">
 
-                <LinearLayout
-                    android:id="@+id/li_product"
-                    android:layout_width="0dp"
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/map" />
+
+                <TextView
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/five"
-                    android:layout_weight="1"
-                    android:background="@drawable/cardbackground"
-                    android:elevation="@dimen/five">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:padding="@dimen/ten">
+                    android:layout_gravity="center"
+                    android:paddingLeft="8dp"
+                    android:text="Hindu temple in Nashik, Maharashtra 422605"
+                    android:textColor="@android:color/black"
+                    android:textSize="14dp"
+                    android:textStyle="normal" />
 
 
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="100dp"
-                            android:src="@drawable/businss" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/ten"
-                            android:maxLines="3"
-                            android:minLines="3"
-                            android:paddingLeft="8dp"
-                            android:text="Lava Blaze Pro 5G(Starry Night, 8GB RAM, 128GB Storage)"
-                            android:textColor="@color/gray_textcolor"
-                            android:textSize="@dimen/fourteen"
-                            android:textStyle="normal" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:paddingLeft="8dp"
-                            android:text="M.R.P.: ₹12,999  ₹14,999 "
-                            android:textColor="@android:color/black"
-                            android:textSize="@dimen/fourteen"
-                            android:textStyle="normal" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:paddingLeft="8dp"
-                            android:text="17% Off"
-                            android:textColor="@color/apptheme"
-                            android:textSize="18dp"
-                            android:textStyle="normal" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/add_button_back"
-                            android:drawableRight="@drawable/baseline_add_24"
-                            android:gravity="center_vertical"
-                            android:padding="@dimen/five"
-                            android:paddingLeft="8dp"
-                            android:text=" ADD"
-                            android:textColor="@color/white"
-                            android:textSize="@dimen/fourteen"
-                            android:textStyle="normal" />
+            </LinearLayout>
 
 
-                    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fifteen"
+                android:orientation="horizontal">
 
 
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
+                <EditText
+                    android:id="@+id/edt_shopName"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/five"
-                    android:layout_weight="1"
-                    android:background="@drawable/cardbackground"
-                    android:elevation="@dimen/five">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:padding="@dimen/ten">
-
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="100dp"
-                            android:src="@drawable/businss" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/ten"
-                            android:maxLines="3"
-                            android:minLines="3"
-                            android:paddingLeft="8dp"
-                            android:text="Lava Blaze Pro 5G(Starry Night, 8GB RAM, 128GB Storage)"
-                            android:textColor="@color/gray_textcolor"
-                            android:textSize="@dimen/fourteen"
-                            android:textStyle="normal" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:paddingLeft="8dp"
-                            android:text="M.R.P.: ₹12,999  ₹14,999 "
-                            android:textColor="@android:color/black"
-                            android:textSize="@dimen/fourteen"
-                            android:textStyle="normal" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:paddingLeft="8dp"
-                            android:text="17% Off"
-                            android:textColor="@color/apptheme"
-                            android:textSize="18dp"
-                            android:textStyle="normal" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/add_button_back"
-                            android:drawableRight="@drawable/baseline_add_24"
-                            android:gravity="center_vertical"
-                            android:padding="@dimen/five"
-                            android:paddingLeft="8dp"
-                            android:text=" ADD"
-                            android:textColor="@color/white"
-                            android:textSize="@dimen/fourteen"
-                            android:textStyle="normal" />
+                    android:layout_gravity="center"
+                    android:background="@drawable/edittextbackground_search"
+                    android:drawableStart="@drawable/ic_search"
+                    android:hint="Search "
+                    android:imeOptions="actionSearch"
+                    android:inputType="textCapWords"
+                    android:padding="@dimen/fourteen"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fourteen" />
 
 
-                    </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fifteen"
+                android:orientation="vertical">
 
 
-                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="8dp"
+                    android:text="For Your Business"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/Sixteen"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rel_homeProList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
             </LinearLayout>
 
 
 
-
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/fifteen"
-            android:orientation="vertical">
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:paddingLeft="8dp"
-                android:text="Top Deals"
-                android:textColor="@android:color/black"
-                android:textSize="@dimen/Sixteen"
-                android:textStyle="bold" />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_marginTop="@dimen/five"
-                android:layout_height="wrap_content"
-                android:background="@color/backgroundcolor"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/five"
-                    android:layout_weight="1"
-                    android:background="@drawable/cardbackground"
-                    android:elevation="@dimen/five">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:padding="@dimen/ten">
-
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="100dp"
-                            android:src="@drawable/businss" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/ten"
-                            android:maxLines="3"
-                            android:minLines="3"
-                            android:paddingLeft="8dp"
-                            android:text="Lava Blaze Pro 5G(Starry Night, 8GB RAM, 128GB Storage)"
-                            android:textColor="@color/gray_textcolor"
-                            android:textSize="@dimen/fourteen"
-                            android:textStyle="normal" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:paddingLeft="8dp"
-                            android:text="M.R.P.: ₹12,999  ₹14,999 "
-                            android:textColor="@android:color/black"
-                            android:textSize="@dimen/fourteen"
-                            android:textStyle="normal" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:paddingLeft="8dp"
-                            android:text="17% Off"
-                            android:textColor="@color/apptheme"
-                            android:textSize="18dp"
-                            android:textStyle="normal" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/add_button_back"
-                            android:drawableRight="@drawable/baseline_add_24"
-                            android:gravity="center_vertical"
-                            android:padding="@dimen/five"
-                            android:paddingLeft="8dp"
-                            android:text=" ADD"
-                            android:textColor="@color/white"
-                            android:textSize="@dimen/fourteen"
-                            android:textStyle="normal" />
-
-
-                    </LinearLayout>
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/five"
-                    android:layout_weight="1"
-                    android:background="@drawable/cardbackground"
-                    android:elevation="@dimen/five">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:padding="@dimen/ten">
-
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="100dp"
-                            android:src="@drawable/businss" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/ten"
-                            android:maxLines="3"
-                            android:minLines="3"
-                            android:paddingLeft="8dp"
-                            android:text="Lava Blaze Pro 5G(Starry Night, 8GB RAM, 128GB Storage)"
-                            android:textColor="@color/gray_textcolor"
-                            android:textSize="@dimen/fourteen"
-                            android:textStyle="normal" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:paddingLeft="8dp"
-                            android:text="M.R.P.: ₹12,999  ₹14,999 "
-                            android:textColor="@android:color/black"
-                            android:textSize="@dimen/fourteen"
-                            android:textStyle="normal" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:paddingLeft="8dp"
-                            android:text="17% Off"
-                            android:textColor="@color/apptheme"
-                            android:textSize="18dp"
-                            android:textStyle="normal" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/add_button_back"
-                            android:drawableRight="@drawable/baseline_add_24"
-                            android:gravity="center_vertical"
-                            android:padding="@dimen/five"
-                            android:paddingLeft="8dp"
-                            android:text=" ADD"
-                            android:textColor="@color/white"
-                            android:textSize="@dimen/fourteen"
-                            android:textStyle="normal" />
-
-
-                    </LinearLayout>
-
-
-                </LinearLayout>
-            </LinearLayout>
-
-
-
-
-        </LinearLayout>
-
-
-    </LinearLayout>
-</androidx.core.widget.NestedScrollView>
+    </androidx.core.widget.NestedScrollView>
 
 
 </RelativeLayout>

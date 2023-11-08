@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="2dp"
+        app:cardCornerRadius="@dimen/five"
+        android:layout_weight="1"
+        app:cardBackgroundColor="@color/apptheme"
+        app:cardUseCompatPadding="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginStart="@dimen/ten"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Order ID"
+                    android:textColor="@color/gray_textcolor"
+                    android:textSize="@dimen/twelve"/>
+                <TextView
+                    android:id="@+id/tv_orderId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SGT87654323765"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fourteen"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Shop Name"
+                    android:textColor="@color/gray_textcolor"
+                    android:textSize="@dimen/twelve"/>
+                <TextView
+                    android:id="@+id/tv_shopId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="HD"
+                    android:textColor="@color/black"
+
+                    android:textSize="@dimen/fourteen"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Order Status"
+                    android:textColor="@color/gray_textcolor"
+                    android:textSize="@dimen/twelve"/>
+                <TextView
+                    android:id="@+id/tv_order_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Delivered"
+                    android:textColor="@color/black"
+
+                    android:textSize="@dimen/fourteen"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Order Date"
+                    android:textColor="@color/gray_textcolor"
+                    android:textSize="@dimen/twelve"/>
+                <TextView
+                    android:id="@+id/tv_order_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="14-Jan-23 01:12 PM"
+                    android:textColor="@color/black"
+                    android:singleLine="true"
+                    android:textSize="@dimen/fourteen"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vender Name"
+                    android:textColor="@color/gray_textcolor"
+                    android:textSize="@dimen/twelve"/>
+                <TextView
+                    android:id="@+id/tv_venderName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ajay"
+                    android:textColor="@color/black"
+
+                    android:textSize="@dimen/fourteen"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total Amount"
+                    android:textColor="@color/gray_textcolor"
+                    android:textSize="@dimen/twelve"/>
+                <TextView
+                    android:id="@+id/tv_orderPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rs. 200.00"
+                    android:textColor="@color/black"
+
+                    android:textSize="@dimen/fourteen"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="@dimen/ten"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="5dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="end"
+                    app:cardBackgroundColor="@color/apptheme">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:paddingStart="@dimen/ten"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/baseline_track_changes_24"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:paddingStart="@dimen/ten"
+                            android:paddingEnd="@dimen/twenty"
+                            android:text="Track"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/twelve" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

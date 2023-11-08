@@ -28,10 +28,15 @@ public abstract class UtilityRuntimePermission extends AppCompatActivity {
     int permissionCheck;
     final String[] requestedPermissions = new String[]{
             Manifest.permission.INTERNET,
+            Manifest.permission.ACCESS_COARSE_LOCATION,
+            Manifest.permission.ACCESS_FINE_LOCATION,
             Manifest.permission.ACCESS_NETWORK_STATE,
             Manifest.permission.CAMERA,
             Manifest.permission.READ_EXTERNAL_STORAGE,
             Manifest.permission.WRITE_EXTERNAL_STORAGE};
+
+
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

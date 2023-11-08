@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:elevation="2dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/five"
+        app:cardUseCompatPadding="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/ten">
+
+
+                <ImageView
+                    android:id="@+id/iv_ImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@drawable/no_image_available" />
+
+                <TextView
+                    android:id="@+id/tv_proname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten"
+                    android:maxLines="3"
+                    android:minLines="3"
+                    android:paddingLeft="8dp"
+                    android:text="Lava Blaze Pro 5G(Starry Night, 8GB RAM, 128GB Storage)"
+                    android:textColor="@color/gray_textcolor"
+                    android:textSize="@dimen/fourteen"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tv_stock"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten"
+                    android:paddingLeft="8dp"
+                    android:text="Lava Blaze Pro"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="normal" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="@dimen/five"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_Mainmrp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:text="M.R.P.: ₹12,999  ₹14,999 "
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/fourteen"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/tv_mrp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:text="M.R.P.: ₹14,999 "
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/fourteen"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_off"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:text="17% Off"
+                    android:textColor="@color/apptheme"
+                    android:textSize="16dp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tv_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/add_button_back"
+                    android:drawableRight="@drawable/baseline_add_24"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/seven"
+                    android:drawableTint="@color/white"
+                    android:paddingLeft="8dp"
+                    android:text=" ADD"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/fourteen"
+                    android:textStyle="normal" />
+
+                <LinearLayout
+                    android:id="@+id/linear_first"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five"
+                    android:layout_weight="1"
+                    android:background="@drawable/green_border"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/seven"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/iv_minus"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:padding="2dp"
+                        android:src="@drawable/baseline_remove_24" />
+
+                    <TextView
+                        android:id="@+id/pro_cust_quantity"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="@dimen/five"
+                        android:layout_marginEnd="@dimen/five"
+                        android:gravity="center"
+                        android:maxLength="2"
+                        android:text="1"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        android:id="@+id/iv_plus"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:padding="2dp"
+                        android:src="@drawable/baseline_add_24" />
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

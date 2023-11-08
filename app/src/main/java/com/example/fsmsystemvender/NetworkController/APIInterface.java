@@ -2,42 +2,43 @@ package com.example.fsmsystemvender.NetworkController;
 
 
 import androidx.annotation.Nullable;
+
+import com.example.fsmsystemvender.Model.Orders;
+import com.example.fsmsystemvender.Model.ProductModel;
+
+import org.json.JSONObject;
+
+import java.util.Map;
+
 import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
 import okhttp3.ResponseBody;
 import retrofit2.Call;
+import retrofit2.http.Body;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
+import retrofit2.http.HTTP;
 import retrofit2.http.Multipart;
 import retrofit2.http.POST;
 import retrofit2.http.Part;
+import retrofit2.http.Path;
+import retrofit2.http.Query;
 
 public interface APIInterface
 {
-    //registerpage
-    @Multipart
-    @POST("API_User/add_user.php")
-    Call<ResponseBody> regiternew(@Part("user_name") @Nullable RequestBody user_name,
-                                  @Part("user_mobile") @Nullable RequestBody user_mobile,
-                                  @Part("user_email") @Nullable RequestBody user_email,
-                                  @Part("state") @Nullable RequestBody state,
-                                  @Part("city") @Nullable RequestBody city,
-                                  @Part("district") @Nullable RequestBody district,
-                                  @Part("taluka") @Nullable RequestBody taluka,
-                                  @Part @Nullable MultipartBody.Part file);
 
     //Login page
-    @FormUrlEncoded
-    @POST("API_User/login.php")
-    Call<ResponseBody> getlogin(@Field("user_mobile") String user_mobile,
-                                @Field("user_token") String user_token);
+    @POST(MyConfig.JSON_Sub_URL+"LiveOrderDispatchStatus2017")
+    Call<ResponseBody> GetData(@Body Map<String, String> body);
 
-    // otp page
-    @FormUrlEncoded
-    @POST("API_User/checkotp.php")
-    Call<ResponseBody> getotp(@Field("user_mobile") String user_mobile,
-                              @Field("user_otp") String user_otp);
+
+    @GET(MyConfig.JSON_Sub_URL+"MargMST2017")
+    Call<ResponseBody> GetProduct(@Query("start") int start, @Query("end") int end);
+
+    //Decryption API
+    @POST("Values")
+    Call<ResponseBody> getresoponce(@Body Map<String, String> body);
 
     //Home page
     @FormUrlEncoded

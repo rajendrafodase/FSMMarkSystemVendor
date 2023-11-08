@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.fsmsystemvender.AddNewAddressActivity;
 import com.example.fsmsystemvender.LoginActivity;
 import com.example.fsmsystemvender.MainActivity;
 import com.example.fsmsystemvender.R;
@@ -22,7 +23,7 @@ public class OtpActivity extends AppCompatActivity {
         varify_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(OtpActivity.this, MainActivity.class));
+                startActivity(new Intent(OtpActivity.this, AddNewAddressActivity.class));
                 finish();
             }
         });

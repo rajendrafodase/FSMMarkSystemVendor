@@ -40,10 +40,13 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     implementation("com.github.bumptech.glide:glide:4.16.0")
-    implementation("com.google.android.libraries.places:places:3.0.0")
     implementation("com.squareup.retrofit2:retrofit:2.5.0")
     implementation("com.squareup.retrofit2:converter-gson:2.5.0")
-
+    implementation("com.fasterxml.jackson.core:jackson-annotations:2.7.3")
     implementation("com.squareup.okhttp3:logging-interceptor:3.4.1")
     implementation("de.hdodenhof:circleimageview:3.1.0")
+    implementation("com.google.android.gms:play-services-maps:18.1.0")
+    implementation("com.google.android.gms:play-services-location:21.0.1")
+    implementation("com.android.support:multidex:1.0.3")
+
 }

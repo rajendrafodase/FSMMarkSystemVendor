@@ -92,29 +92,31 @@
                                 android:textStyle="bold" />
 
 
-                            <TextView
-                                android:id="@+id/tv_perc_off"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:padding="3dp"
-                                android:paddingStart="@dimen/ten"
-                                android:paddingEnd="@dimen/ten"
-                                android:text="20% off"
-                                android:textColor="@color/black"
-                                android:textSize="14sp"
-                                android:textStyle="bold" />
 
 
                         </LinearLayout>
 
+                        <TextView
+                            android:id="@+id/tv_perc_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:paddingStart="@dimen/five"
+                            android:paddingEnd="@dimen/ten"
+                            android:text="20% off"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:id="@+id/tv_brand"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Brand:"
+                            android:padding="3dp"
+                            android:paddingStart="@dimen/five"
+                            android:paddingEnd="@dimen/ten"
                             android:textColor="@color/gray"
-                            android:textSize="13sp" />
+                            android:textSize="14sp" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -213,31 +215,9 @@
 
             </LinearLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="4dp"
-                android:layout_marginTop="@dimen/ten"
-                android:layout_marginBottom="@dimen/ten"
-                android:background="@color/light_gray" />
 
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="@dimen/seven"
-                android:text="Key Features"
-                android:textColor="@color/black"
-                android:textSize="15sp" />
 
-            <TextView
-                android:id="@+id/tv_keyfeatures"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="3dp"
-                android:padding="@dimen/seven"
-                android:text="Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown \n Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown"
-                android:textColor="@color/black"
-                android:textSize="@dimen/fourteen" />
 
             <View
                 android:layout_width="match_parent"
@@ -251,9 +231,158 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/seven"
-                android:text="Product Specifications"
+                android:text="Product Scheme"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/seven"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/seven"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Quantity"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Price/Unit"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Your Profit"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"/>
+
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginBottom="@dimen/ten"
+                android:background="@color/light_gray" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/seven"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1-5"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rs.23.00"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="45.98%"
+                    android:textColor="@color/green"
+                    android:textSize="15sp"/>
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginBottom="@dimen/ten"
+                android:background="@color/light_gray" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/seven"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5-10"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rs.20.00"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="54.00%"
+                    android:textColor="@color/green"
+                    android:textSize="15sp"/>
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginBottom="@dimen/ten"
+                android:background="@color/light_gray" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/seven"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10+"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rs.18.00"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="60.00%"
+                    android:textColor="@color/green"
+                    android:textSize="15sp"/>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
 
 
            
@@ -285,279 +414,6 @@
                 android:textColor="@color/black"
                 android:textSize="@dimen/fourteen" />
 
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="4dp"
-                android:layout_marginTop="@dimen/ten"
-                android:layout_marginBottom="@dimen/ten"
-                android:background="@color/light_gray" />
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/ten">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:padding="@dimen/seven"
-                    android:text="Customer Review"
-                    android:textColor="@color/black"
-                    android:textSize="15sp" />
-
-                <TextView
-                    android:id="@+id/tv_add_review"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:background="@drawable/edittextbackground"
-                    android:padding="@dimen/seven"
-                    android:text="Write All Review"
-                    android:textColor="@color/apptheme"
-                    android:textSize="15sp" />
-
-            </RelativeLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="80dp"
-                    android:layout_height="60dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginHorizontal="@dimen/ten"
-                    android:background="@drawable/edittextbackground"
-                    android:gravity="center"
-                    android:padding="@dimen/seven"
-                    android:text="4.8"
-                    android:textAlignment="center"
-                    android:textColor="@color/apptheme"
-                    android:textSize="15sp" />
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/ten"
-                    android:layout_marginEnd="@dimen/ten"
-                    android:gravity="end"
-                    android:orientation="vertical">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:drawableEnd="@drawable/baseline_star_24"
-                            android:text="5"
-                            android:textColor="@color/black"
-                            android:textSize="@dimen/fourteen" />
-
-                        <ProgressBar
-                            android:id="@+id/p_Bar5"
-                            style="?android:attr/progressBarStyleHorizontal"
-                            android:layout_width="150sp"
-                            android:layout_height="10dp"
-                            android:layout_gravity="center"
-                            android:layout_marginEnd="@dimen/ten"
-                            android:max="10"
-                            android:progress="2"
-                            android:progressDrawable="@drawable/progress_bar_background" />
-
-                        <TextView
-                            android:id="@+id/tv_fivestar"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginStart="@dimen/five"
-                            android:text="5"
-                            android:textColor="@color/black"
-                            android:textSize="@dimen/fourteen" />
-
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:drawableEnd="@drawable/baseline_star_24"
-                            android:text="4"
-                            android:textColor="@color/black"
-                            android:textSize="@dimen/fourteen" />
-
-                        <ProgressBar
-                            android:id="@+id/p_Bar4"
-                            style="?android:attr/progressBarStyleHorizontal"
-                            android:layout_width="150sp"
-                            android:layout_height="10dp"
-                            android:layout_gravity="center"
-                            android:layout_marginEnd="@dimen/ten"
-                            android:max="10"
-                            android:progress="2"
-                            android:progressDrawable="@drawable/progress_bar_background" />
-
-                        <TextView
-                            android:id="@+id/tv_fourstar"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginStart="@dimen/five"
-                            android:text="5"
-                            android:textColor="@color/black"
-                            android:textSize="@dimen/fourteen" />
-
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:drawableEnd="@drawable/baseline_star_24"
-                            android:text="3"
-                            android:textColor="@color/black"
-                            android:textSize="@dimen/fourteen" />
-
-                        <ProgressBar
-                            android:id="@+id/p_Bar3"
-                            style="?android:attr/progressBarStyleHorizontal"
-                            android:layout_width="150sp"
-                            android:layout_height="10dp"
-                            android:layout_gravity="center"
-                            android:layout_marginEnd="@dimen/ten"
-                            android:max="10"
-                            android:progress="2"
-                            android:progressDrawable="@drawable/progress_bar_background" />
-
-                        <TextView
-                            android:id="@+id/tv_threestar"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginStart="@dimen/five"
-                            android:text="5"
-                            android:textColor="@color/black"
-                            android:textSize="@dimen/fourteen" />
-
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:drawableEnd="@drawable/baseline_star_24"
-                            android:text="2"
-                            android:textColor="@color/black"
-                            android:textSize="@dimen/fourteen" />
-
-                        <ProgressBar
-                            android:id="@+id/p_Bar2"
-                            style="?android:attr/progressBarStyleHorizontal"
-                            android:layout_width="150sp"
-                            android:layout_height="10dp"
-                            android:layout_gravity="center"
-                            android:layout_marginEnd="@dimen/ten"
-                            android:max="10"
-                            android:progress="2"
-                            android:progressDrawable="@drawable/progress_bar_background" />
-
-                        <TextView
-                            android:id="@+id/tv_twostar"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginStart="@dimen/five"
-                            android:text="5"
-                            android:textColor="@color/black"
-                            android:textSize="@dimen/fourteen" />
-
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:drawableEnd="@drawable/baseline_star_24"
-                            android:text="1"
-                            android:textColor="@color/black"
-                            android:textSize="@dimen/fourteen" />
-
-                        <ProgressBar
-                            android:id="@+id/p_Bar1"
-                            style="?android:attr/progressBarStyleHorizontal"
-                            android:layout_width="150sp"
-                            android:layout_height="10dp"
-                            android:layout_gravity="center"
-                            android:layout_marginEnd="@dimen/ten"
-                            android:max="10"
-                            android:progress="2"
-                            android:progressDrawable="@drawable/progress_bar_background" />
-
-                        <TextView
-                            android:id="@+id/tv_onestar"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginStart="@dimen/five"
-                            android:text="5"
-                            android:textColor="@color/black"
-                            android:textSize="@dimen/fourteen" />
-
-
-                    </LinearLayout>
-
-
-                </LinearLayout>
-            </LinearLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginHorizontal="@dimen/ten"
-                android:layout_marginTop="@dimen/ten"
-                android:layout_marginBottom="@dimen/ten"
-                android:background="@color/light_gray" />
-
-            <TextView
-                android:id="@+id/tv_allreview"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="3dp"
-                android:layout_marginBottom="@dimen/ten"
-                android:padding="@dimen/seven"
-                android:text="View All Review"
-                android:textColor="@color/apptheme"
-                android:textSize="@dimen/fourteen" />
 
         </LinearLayout>
 
